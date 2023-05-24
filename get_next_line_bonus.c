@@ -6,11 +6,11 @@
 /*   By: shechong <shechong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 14:05:47 by shechong          #+#    #+#             */
-/*   Updated: 2023/05/22 14:35:49 by shechong         ###   ########.fr       */
+/*   Updated: 2023/05/22 19:11:03 by shechong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	*free_and_return(void *var, void *ret)
 {
@@ -59,6 +59,7 @@ char	*get_next_line(int fd)
 	char		*buffer;
 	int			read_bytes;
 
+	buffer = NULL;
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	buffer = malloc((BUFFER_SIZE + 1));
