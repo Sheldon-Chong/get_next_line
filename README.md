@@ -1,8 +1,13 @@
-### ❓ what is get_next_line
-The aim of get_next_line is very basic. It is to create a function that retrieves the next line of a file. Whenever the function is called, the next line should be retreived, until it reaches the end of the file
+## get_next_line
+The aim of get_next_line is to create a function that reads a file, line by line, with efficient memory handling. Whenever the function is called, the next line should be retreived, until it reaches the end of the file.
 
-### 📖 concepts
+## 📖 Concepts
 Fds, opening files, reading, static variables
 
-### my experience
-From evaluating other cadet's get_next_line, I've noticed the solution typically follows a similmiar algorithm, without much deviation. The project throws some basic rules and requirements that must be followed, such as requiring n number of bytes to be read from read(), and being unable to back-track and re-read from another point of the file. After figuring out the algorithm myself, I was in awe at how resourceful and efficient this it was at reading a file's contents.
+## ⬇️ Clone this repository
+```zsh
+git clone git@github.com:Sheldon-Chong/get_next_line.git
+```
+
+## My experience with this project
+At first glance, get_next_line seems fairly straightforward. However, the project comes with strict constraints, such as requiring a fixed number of bytes to be read per call to `read()` and prohibiting backtracking or re-reading from a previous point in the file. Once I figured out the algorithm, I was impressed by how resourceful and efficient it was at handling file reading while adhering to these limitations.
